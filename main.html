@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<title>egy kora</title>
+<style>
+    h3 {
+        text-align: center;
+        color: blue;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+        text-align: right;
+    }
+
+    li {
+        float: right;
+    }
+
+    li a {
+        font-size: 14px;
+        display: block;
+        color: white;
+        text-align: right;
+        padding: 14px 16px;
+        text-decoration: none;
+
+    }
+
+    li a:hover {
+        background-color: red;
+    }
+
+    .f {
+        background-color: black;
+        color: blue;
+        /* text-shadow: 2px 2px; */
+    }
+
+    table,
+    td,
+    th {
+        color: white;
+        border: 3px solid black;
+        background-color: grey;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th {
+        height: 70px;
+    }
+
+    h2 {
+        border-left: 6px solid blue;
+        border-right: 6px solid blue;
+        background-color: lightgrey;
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+
+    .logo img {
+        margin-top: -30px;
+        height: 37px;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 10px;
+        left: -2px;
+        top: 0;
+
+    }
+</style>
+</head>
+
+<body>
+    <a href="montkhb.htm"><div class="logo"><img
+            src="data:image/png;base64,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"
+            width="110" height="50" alt="egykora"></div>
+    <ul class="f"></a>
+        <li><a href="ziad mos3ad/login.htm" class="active">تسجيل دخول</a></li>
+        <li><a class="active" href="ziad nabil/page 1.htm">الدورى المصرى</a></li>
+        <li><a class="active" href="ziad amr/website/index.html">دورى ابطال اوروبا</a></li>
+        <li><a class="active" href="caf.htm">دورى ابطال افريقيا</a></li>
+        <li><a class="active" href="ziad mos3ad/دوري انجليزي.htm">الدورى الانجليزى</a></li>
+        <li><a class="active" href="ziad amr/website 2/index.html">الدورى الاسبانى</a></li>
+        <li><a class="active" href="mazbot/page1.htm">الدورى الايطالى</a></li>
+        <li><a class="active" href="kahrba/kahrab.htm">الدورى الالمانى</a></li>
+        <li><a class="active" href="ziad eldib/Project/index.html">كأس العرب</a></li>
+        <li><a class="active" href="ziad yasser/project 2/index.html">امم افريقيا</a></li>
+        <li><a class="active" href="ziad yasser/project/index.html">كاس العالم</a></li>
+        <li><a class="active" href="kahrba/new.html">اخر الانتقالات</a></li>
+        <li><a href="ziad eldib/project 2/index.html" class="active">كونفدراليه</a></li>
+        <li><a href="mazbot/page2.htm" class="active">الدوري الفرنسي</a></li>
+        
+
+    </ul>
+
+    <h2>مباريات اليوم</h2>
+    <table>
+        <tr>
+            <th>
+                <p>الفريق</p>
+            </th>
+            <th>الساعه</th>
+            <th>الفريق</th>
+        </tr>
+        <tr>
+            <th>بترو اتليتكو<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//160//2022/2/12/243352271_2801188596848397_4776173440084276977_n2022_2_12_18_59.jpg"
+                    width="50" height="50"></th>
+            <th>15:00</th>
+            <th>الوداد البيضاوى<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//120//2018/8/18/Wydad2018_8_18_21_18.jpg"
+                    width="50" height="50"></th>
+        </tr>
+        <tr>
+            <th>الاهلى<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//160//2021/9/8/Elahly2021_9_8_16_46.jpg"
+                    width="50" height="50"></th>
+            <th>21:00</th>
+            <th>وفاق سطيف<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//120//2018/10/31/WafakSetif2018_10_31_13_44.jpg"
+                    width="50" height="50"></th>
+        </tr>
+        <tr>
+            <th>تشيلسى<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//120//2018/7/29/Chelsea2018_7_29_15_28.jpg"
+                    width="50" height="50"></th>
+            <th>16:00</th>
+            <th>ولفرهامبتون<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//120//2018/7/29/Wolverhampton2018_7_29_15_30.jpg"
+                    width="50" height="50"></th>
+        </tr>
+        <tr>
+            <th>برايتون<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//120//2018/7/29/Brighton2018_7_29_15_31.jpg"
+                    width="50" height="50"></th>
+            <th>18:30</th>
+            <th>مانشستر يونايتد<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//120//2018/7/29/ManchesterUnited2018_7_29_15_29.jpg"
+                    width="50" height="50"></th>
+        </tr>
+        <tr>
+            <th>ليفربول<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//120//2018/7/29/Liverpool2018_7_29_15_27.jpg"
+                    width="50" height="50"></th>
+            <th>20:45</th>
+            <th>توتنهام<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//120//2018/7/29/Tottenham2018_7_29_15_28.jpg"
+                    width="50" height="50"></th>
+        </tr>
+        <tr>
+            <th>اتليتيك بلباو<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//120//2018/7/29/AthleticBilbao2018_7_29_14_44.jpg"
+                    width="50" height="50"></th>
+            <th>16:15</th>
+            <th>فالنسيا<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//120//2018/7/29/Valencia2018_7_29_14_44.jpg"
+                    width="50" height="50"></th>
+        </tr>
+        <tr>
+            <th>ريال بيتيس<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//120//2018/7/29/RealBetis2018_7_29_14_50.jpg"
+                    width="50" height="50"></th>
+            <th>21:00</th>
+            <th>برشلونة<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//120//2018/7/29/Barcelona2018_7_29_14_44.jpg"
+                    width="50" height="50"></th>
+        </tr>
+        <tr>
+            <th>جروتر فورت<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//120//2021/9/5/GreutherFurth2021_9_5_19_42.jpg"
+                    width="50" height="50"></th>
+            <th>15:30</th>
+            <th>بوروسيا دورتموند<img
+                    src="https://media.gemini.media/img/yallakora/IOSTeams//120//2018/7/29/BorussiaDortmund2018_7_29_16_4.jpg"
+                    width="50" height="50"></th>
+        </tr>
+    </table>
+    <h2>اخر الاخبار</h2>
+    <h3>رسميا.. الأهلي يطلب من كاف إقامة نهائي إفريقيا في ملعب محايد</h3>
+    <img
+        src="https://media.gemini.media/img/yallakora/Normal//2022/5/8/9f9198d7-b967-4ebe-affa-8fb502dc863e-6277d8e86555d2022_5_8_16_57.jpg">
+    <h3>ماذا يحتاج ليفربول للفوز ببريميرليج بعد خسارة نقطتين أمام توتنهام؟</h3>
+    <img
+        src="https://media.gemini.media/img/yallakora/Normal//2022/4/15/liverpool-man-city-draw-2-2-in-battle-of-epls-best2022_4_15_21_15.jpg">
+    <h3>سيتي يحتفل بتعثر ليفربول ويكتسح نيوكاسل ليبتعد بصدارة بريميرليج</h3>
+    <img src="https://media.gemini.media/img/yallakora/Normal//2022/5/8/fsqhwv-xoaad8x32022_5_8_19_24.jpg">
+    <h3>مرموش يصنع في تعادل شتوتجارت مع بايرن بايرن ميونيخ بالبوندسليجا </h3>
+    <img src="https://media.gemini.media/img/yallakora/Normal//2021/9/19/278171-02021_9_19_17_41.jpg">
+</body>
+
+</html>

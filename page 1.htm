@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<script type="text/javascript">            
+        function redirect() {
+            window.location.href="https://www.yallakora.com";
+        }
+    </script>
+</head>
+ <title>EGY KORA </title>
+<style>
+ h1{
+ text-align:center;
+ color:red;
+ }
+
+ h4{
+  text-align:center;  
+  color:red;
+  }
+ h2{
+  border-left: 6px solid red;
+  border-right: 6px solid red;
+  background-color: lightgrey;
+  text-align:center;
+ }
+  h3{
+ text-decoration:underline;
+ color:red;
+ text-align:right;
+ }
+table {
+  font-family: arial, sans-serif;
+  width: 100%;
+  text-align:right;
+  border:1px solid black;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  border:1px solid black
+}
+
+ ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color: black;
+  text-align:right;
+}
+
+ li {
+  float: right;
+}
+
+ li a {
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: red;
+}
+.active {
+  background-color: red;
+  color:blue;
+  text-shadow: 2px 2px;
+}
+ img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ .logo img{
+ position:absolute;
+ margin-top:10px;
+ margin-left:10px;
+}
+ .btn{
+  
+  position: absolute;
+   
+ background-color: gray;
+    
+ text-decoration: none;
+    
+  font-weight: bold;
+   
+ font-size: 30px;
+    
+ color: azure;
+   
+ display: inline-block;
+   
+ border-radius: 15px;
+   
+ transition: 0.8 ease;
+    
+justify-content: center;
+
+}
+
+.btn:hover{
+   
+ background-color: blanchedalmond;
+  
+  transform:  scale(1.2);
+}
+ 
+  
+</style>
+</head>
+<body>
+ <div class="logo"><img src="data:image/png;base64,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"width="110" height="50"alt="egykora"></div>
+
+<ul>
+ <h3>
+  <li><a href="#«·„»«—Ì« ">«·„»«—Ì« </a></li>
+  <li><a href="#«·«Œ»«—">«·«Œ»«—</a></li>
+  <li><a href="#œÊ—Ì«  Ê»ÿÊ·« ">œÊ—Ì«  Ê»ÿÊ·« </a></li>
+  <li><a href="#«Œ— «·«‰ ﬁ«·« ">«Œ— «·«‰ ﬁ«·« </a></li>
+  <li><a href="#« ’· »‰«">« ’· »‰«</a></li>
+</h3>
+</ul>
+ <h2> — Ì» «·œÊ—Ï «·„’—Ï</h2>
+  <table>
+   <tr>
+    <th>«·„—ﬂ“</th>
+    <th>«·›—Ìﬁ</th>
+    <th>«·‰ﬁ«ÿ</th>
+
+   </tr>
+  <tr>
+  <th>1</th>
+  <th>«·“„«·ﬂ</th>
+  <th>35</th>
+  </tr>
+  <tr>
+  <th>2</th>
+  <th>«·«Â·Ï</th>
+  <th>31</th>
+  </tr>
+  <tr>
+  <th>3</th>
+  <th>»Ì—«„Ìœ“</th>
+  <th>29</th>
+  </tr>qs
+  <tr>
+  <th>4</th>
+  <th>”„ÊÕ…</th>
+  <th>23</th>
+   </tr>
+  <tr>
+  <th>5</th>
+  <th>›ÌÊ ‘— «› ”Ï</th>
+  <th>22</th>
+  </tr>
+  <tr>
+  <th>6</th>
+  <th>›«—ﬂÊ</th>
+  <th>21</th>  n 
+
+
+  </tr>
+  <tr>
+  <th>7</th>
+  <th>«·„’—Ï</th>
+  <th>19</th>
+  </tr>
+  <tr>
+  <th>8</th>
+  <th>«·»‰ﬂ «·«Â·Ï</th>
+  <th>19</th>
+  </tr>
+  <tr>
+  <th>9</th>
+  <th>€“· «·„Õ·…</th>
+  <th>19</th>
+  </tr>
+  <tr>
+  <th>10</th>
+  <th>ÿ·«∆⁄ «·ÃÌ‘</th>
+  <th>18</th>
+  </tr>
+  <tr>
+  <th>11</th>
+  <th>«·ÃÊ‰…</th>
+  <th>17</th>
+  </tr>
+  <tr>
+  <th>12</th>
+  <th>«‰»Ï</th>
+  <th>16</th>
+  </tr>
+  <tr>
+  <th>13</th>
+  <th>«·« Õ«œ «·”ﬂ‰œ—Ï</th>
+  <th>15</th>
+  </tr>
+  <tr>
+  <th>14</th>
+  <th>”Ì—«„Ìﬂ« ﬂ·ÌÊ»« —«</th>
+  <th>14</th>
+  </tr>
+  <tr> 
+  <th>15</th>
+  <th>«·„ﬁ«Ê·Ê‰ «·⁄—»</th>
+  <th>12</th>
+  </tr>
+  <tr>
+  <th>16</th>
+  <th>«·«”„«⁄Ì·Ï</th>
+  <th>11</th>
+  </tr>
+  <tr>
+  <th>17</th>
+  <th>„’— «·„ﬁ«’…</th>
+  <th>10</th>
+  </tr>
+  <tr>
+  <th>18</th>
+  <th>«Ì” —‰ ﬂÊ„»«‰Ï</th>
+  <th>10</th>
+  </tr>
+  </table>
+ <h2>√Œ»«—</h2>
+
+<p><h4>«·«Â·Ï —«Õ… 48 ”«⁄… ﬁ»· „Ê«ÃÂ… «·ÃÌ‘ ›Ï «·œÊ—Ï</h4></p>
+
+  <img src="https://media.gemini.media/img/yallakora/Normal//2022/3/5/%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A2022_3_5_1_17.jpg" alt="Trulli" width="500" height="333">
+  <h4>«·ÃÊ‰… Ìﬁ›“ ··„—ﬂ“ «·11 »Âœ› ›Ï „—„Ï ”„ÊÕ…</h4>
+  <img src="https://media.gemini.media/img/yallakora/Normal//2021/5/1/2d84fe0f-9501-4f07-b4b6-a19a9b07e9bb2021_5_1_10_55.jpg" alt="algouna"width="500"
+ height="333">
+  <h4> «ﬂÌ” ÃÊ‰Ì«” ÌﬁÊœ «·„—«‰ «·«Ê· ·»Ì—«„Ìœ“ »⁄œ —ÕÌ· «ÌÂ«» Ã·«·</h4>
+  <img src="https://media.gemini.media/img/yallakora/Normal//2022/4/26/279046693-510185314077757-1401069983392453258-n2022_4_26_0_43.jpg" alt="takis" width="500" height="333">
+  <h4>«·√Â·Ì ÌÊ«’· ≈Âœ«— «·‰ﬁ«ÿ » ⁄«œ· ”·»Ì „⁄ ÿ·«∆⁄ «·ÃÌ‘ ›Ì «·œÊ—Ì</h4>
+   <img src="https://media.gemini.media/img/yallakora/Normal//2022/4/27/capture2022_4_27_23_25.jpg" alt="takis" width="500" height="333">
+  <h2>≈Õ’«∆Ì«  «·œÊ—Ï «·„’—Ï</h2>
+  <h3>:ﬁ«∆„… Âœ«›Ï «·œÊ—Ï «·„’—Ï</h3>
+  <table>
+  <tr>
+  <th>⁄œœ «·«Âœ«›</th>
+  <th>«”„ «··«⁄»</th>
+  <th>«·„—ﬂ“</th>
+  </tr>
+  <tr>
+  <th>9</th>
+  <th>«Õ„œ”Ìœ “Ì“Ê<img src="https://media.gemini.media/img/yallakora/Players//Players/Untitled-112-12-2021-20-7-52.jpg"alt="zizo"width="50"height"50"></th>
+  <th>1</th>
+  </tr>
+  <tr>
+  <th>7</th>
+  <th>ﬂ—Ì” Ê›« „«»Ê·Ê·Ê<img src="https://nl7za.com/wp-content/uploads/2022/01/271657103_4697602810334691_1830102296671196736_n.jpg"width="50"height="50"></th>
+  <th>2</th>
+  </tr>
+  <tr>
+  <th>6</th>
+  <th>ÃÊ‰ «Ì»Êﬂ«<img src="https://img.youm7.com/large/202202120750315031.jpg"width="50" height="50"></th>
+  <th>3</th>
+  </tr>
+  </table>
+  <h3>:ﬁ«∆„… ’«‰⁄Ï «·√Âœ«›</h3>
+  <table>
+  <tr>
+  <th>⁄œœ «·√Âœ«›</th>
+  <th>«”„ «··«⁄»</th>
+  <th>«·„—ﬂ“</th>
+  </tr>
+  <tr>
+  <th>7</th>
+  <th>ÃÊ“Ì› ÃÊ‰«À«‰<img src="https://semedia.filgoal.com/Photos/Person/Medium/102974.png"width="50"height="50"></th>
+  <th>1</th>
+  </tr>
+  <tr>
+  <th>5</th>
+  <th>⁄»œ«··Â «·”⁄Ìœ<img src="https://gate.ahram.org.eg/Media/News/2021/1/1/19_2021-637451251193700640-370.jpg"width="50"height="50"></th>
+  <th>2</th>
+  </tr>
+  <th>5</th>
+  <th>„Õ„œ „ÃœÏ ﬁ›‘Â<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcZTL0jR-v227STHw1N_PV7GeqmQor1hsy-dwJFWk-cgmdlSwDR3j2Nu1NLjamqKBNCwg&usqp=CAU"width="50" height="50"></th>
+  <th>3</th>
+  </tr>
+  </table>
+  <h1>EGYKORA<h1>
+<button type="button" onclick="redirect();" class="btn">Official page</button>
+</body>
+</html>
+
+
